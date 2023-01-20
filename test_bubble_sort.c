@@ -9,5 +9,8 @@ int main(void)
 
 	bubble_sort(test_array, 10);
 
+	printf("\n");
+	print_array(test_array, 10);
+
 	return (0);
 }

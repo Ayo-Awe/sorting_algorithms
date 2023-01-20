@@ -50,6 +50,7 @@ void bubble_sort(int *array, size_t size)
 /**
  * swap - swaps the elements in an array
  * @index_1: index of first element
+ * @array: pointer to array
  * @index_2: index of first second
  *
  * return: void
