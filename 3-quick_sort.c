@@ -77,18 +77,18 @@ void sort(int *array, size_t size, int *array_main, size_t size_main)
 					print_array(array_main, size_main);
 
 					/*
-					 * Sort right side of partition if
-					 * right side is not out of range
-					 */
-					if (p_index + 1 < (int)size)
-						sort(&array[p_index + 1], size - 1 - p_index, array_main, size_main);
-
-					/*
 					 * Sort left side of partition if
 					 * left side isn't out of range
 					 */
 					if (p_index != 0)
 						sort(&array[0], p_index, array_main, size_main);
+
+					/*
+					 * Sort right side of partition if
+					 * right side is not out of range
+					 */
+					if (p_index + 1 < (int)size)
+						sort(&array[p_index + 1], size - 1 - p_index, array_main, size_main);
 				}
 				else if (array[i_index] < array[pivot])
 				{
